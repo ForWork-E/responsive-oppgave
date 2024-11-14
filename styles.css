@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: rgb(6, 54, 4);
+}
+
+nav {
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(6, 54, 4);
+  padding: 10px;
+}
+
+nav a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+nav a[aria-current='page'] {
+  color: yellow;
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+header {
+  text-align: center; 
+  padding: 20px;
+}
+
+h1 {
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-top: 15px blue double;
+  border-bottom: 15px #FFD700 double;
+  border-left: 15px #FF6347 double;
+  border-right: 15px #2E8B57 double;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(5, 1, 255);
+  background-color: #DDA0DD;
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+main {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+main img {
+  width: 100%; 
+  max-width: 770px; 
+  height: auto;
+}
+
+.Christmascards {
+  background-color: #000;
+  max-width: 780px;
+  height: auto;
+  margin: 0 auto; 
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 5px; 
+  margin-top: 1px; 
+  text-align: center; 
+}
+
+.column, .columntwo, .columnthree, .columnfour, .columnfive {
+  display: flex;
+  flex: 1 1 200px; 
+  max-width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: #000 10px solid;
+  transition: transform 0.3s;
+  cursor: pointer;
+  background-image: url(images/smallchristmas.jpg); 
+  padding: 5px; 
+  color: white;
+}
+
+.column {
+  color: #FF6347; 
+}
+
+.columntwo {
+  color: #2E8B57; 
+}
+
+.columnthree {
+  color: #1E90FF; 
+}
+
+.columnfour {
+  color: #DDA0DD;
+}
+
+.columnfive {
+  color: #FFD700; 
+}
+
+.column:hover, .columntwo:hover, .columnthree:hover, .columnfour:hover, .columnfive:hover, h1:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 770px) {
+  .columns {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  nav {
+    flex-direction: row; 
+    align-items: center; 
+    padding: 1px; 
+  }
+
+  .column, .columntwo, .columnthree, .columnfour, .columnfive {
+    max-width: 100%; 
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  footer {
+    text-align: center; 
+    padding: 10px;
+  }
+}

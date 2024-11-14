@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Christmas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Christmas</a>
+      <a href="/page2.html">Christmas 2</a>
+    </nav>
+
+    <header>
+      <h1 onclick="playSound('sounds/hoho.mp4')">Christmas</h1>
+    </header>
+    
+    <main>
+      <img src="images/christmas.jpg" alt="image of an christmas tree with fire place in the background"/>
+    </main>
+
+    <footer>
+<div> 
+  <div class="Christmascards">
+  <div class="columns">
+  <div class="column" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(1. The First Christmas Card:) The first Christmas card was created in 1843 by Sir Henry Cole, a British civil servant. It featured a family celebrating together, and the greeting read, “A Merry Christmas and a Happy New Year to You.”</em></strong></p>
+ </div>
+  <div class="columntwo" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(2. The Tradition of Hanging Stockings:) The tradition of hanging stockings comes from a legend about St. Nicholas. It’s said that he secretly dropped gold coins into stockings that were hanging by the fire to dry. This eventually evolved into the Christmas stocking tradition we know today.</em></strong></p>
+ </div>
+  <div class="columnthree" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(3. The First Christmas Tree:) 
+  The first recorded Christmas tree was in Germany in the 16th century. However, the modern Christmas tree tradition became popular in the 19th century when Queen Victoria and Prince Albert (both of German descent) were pictured with a tree at Windsor Castle.</em></strong></p>
+ </div>
+  <div class="columnfour" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(4. Christmas Trees Are Edible:) While the idea of eating a Christmas tree might sound strange, many evergreen trees, including pines and firs, have edible parts. Pine needles are rich in vitamin C and can be used to make tea.</em></strong></p>
+  </div>
+  <div class="columnfive" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(5. The Largest Christmas Gift Ever:) The largest Christmas gift ever given was the Statue of Liberty. It was given to the United States by France in 1886 and while it wasn’t a traditional gift under the tree, it is still a monumental holiday gift in history.</em></strong></p>
+  </footer>
+  <script>
+  function playSound(src) {
+  const audio = new Audio(src);
+  audio.play();
+  }
+</script>
+ </body>
+</html>

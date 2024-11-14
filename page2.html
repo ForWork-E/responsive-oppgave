@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Christmastwo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Christmas</a>
+      <a href="/page2.html" aria-current="page">Christmas 2</a>
+    </nav>
+
+    <header>
+      <h1 onclick="playSound('sounds/hoho.mp4')">Christmas Two</h1>
+    </header>
+    
+    <main>
+      <img src="images/christmas.jpg" alt="image of an christmas tree with fire place in the background"/>
+    </main>
+
+    <footer>
+<div> 
+  <div class="Christmascards">
+  <div class="columns">
+  <div class="column" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(6. “Jingle Bells” Was Originally a Thanksgiving Song:) The classic Christmas song “Jingle Bells,” written by James Lord Pierpont in 1857, was actually intended for Thanksgiving. It became associated with Christmas later on due to its wintery imagery.</em></strong></p>
+ </div>
+  <div class="columntwo" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(7. Christmas Is the Largest Commercial Holiday:) Christmas is the largest commercial holiday globally, with people spending billions of dollars on gifts, decorations food, and travel. The average American spends around $1,000 on Christmas-related expenses each year!</em></strong></p>
+ </div>
+  <div class="columnthree" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(8. The Most Expensive Christmas Tree:) The most expensive Christmas tree ever created was in 2019 in Dubai. It was worth an astounding $15 million, decorated with diamonds, sapphires, and other precious gems.</em></strong></p>
+ </div>
+  <div class="columnfour" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(9. Santa's Reindeer Are Female:) Santa’s reindeer are typically depicted as male in popular culture, but in reality, they are likely female. Reindeer grow antlers in the summer and shed them in the winter, so the reindeer pulling Santa’s sleigh would likely be female, since male reindeer shed their antlers before Christmas.</em></strong></p>
+  </div>
+  <div class="columnfive" onclick="playSound('sounds/christmas-melody.mp4')"><p><strong><em>(10. Christmas Was Almost Abolished:) In the 17th century, the Puritans in England and New England actually banned Christmas, believing the holiday was too frivolous. In fact, Christmas celebrations were illegal in England between 1647 and 1660 under the Commonwealth government.</em></strong></p>
+  </footer>
+  <script>
+  function playSound(src) {
+  const audio = new Audio(src);
+  audio.play();
+  }
+</script>
+ </body>
+</html>

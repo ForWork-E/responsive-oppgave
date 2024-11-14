@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: rgb(163, 156, 156);
+}
+
+nav {
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: gray;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+
+nav a[aria-current='page'] {
+  color: rgb(0, 0, 0);
+  background-color: #666666;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {}
+main {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto; 
+  }
+  
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: royalblue;
+}
+
+.Christmascards {
+  background-color: #000000;
+  max-width: 770px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {}
+.columns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+}
+
+@media (max-width: 770px) {}
+.column {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: #000 10px solid;
+  color: red;
+  background-image: url(images/smallchristmas.jpg);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {}
+.columntwo {
+  display: flex;
+  width: 100%;
+  max-width: 100%; 
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: #000 10px solid;
+  color: rgb(2, 189, 2);
+  background-image: url(images/smallchristmas.jpg);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {}
+.columnthree {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: #000 10px solid;
+  color: rgb(0, 102, 255);
+  background-image: url(images/smallchristmas.jpg);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {}
+.columnfour {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: #000 10px solid;
+  color:palevioletred;
+  background-image: url(images/smallchristmas.jpg);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 770px) {}
+.columnfive {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: #000 10px solid;
+  color:rgb(215, 238, 11);
+  background-image: url(images/smallchristmas.jpg);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.column:hover, .columntwo:hover, .columnthree:hover, .columnfour:hover, .columnfive:hover {
+  transform: scale(1.05);
+}
